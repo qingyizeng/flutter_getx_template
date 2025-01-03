@@ -1,15 +1,13 @@
 import 'dart:async';
 
+import 'package:app_links/app_links.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_ducafecat_news_getx/common/routers/routes.dart';
 import 'package:flutter_ducafecat_news_getx/common/utils/utils.dart';
 import 'package:flutter_ducafecat_news_getx/common/values/values.dart';
+import 'package:flutter_ducafecat_news_getx/pages/application/state.dart';
 import 'package:get/get.dart';
-import 'package:uni_links/uni_links.dart';
-
-import 'index.dart';
 
 class ApplicationController extends GetxController {
   ApplicationController();
@@ -29,6 +27,9 @@ class ApplicationController extends GetxController {
   // 底部导航项目
   late final List<BottomNavigationBarItem> bottomTabs;
 
+  late AppLinks _appLinks;
+  StreamSubscription<Uri>? _linkSubscription;
+
   /// 事件
 
   // tab栏动画
@@ -43,43 +44,59 @@ class ApplicationController extends GetxController {
   }
 
   /// scheme 内部打开
-  bool isInitialUriIsHandled = false;
-  StreamSubscription? uriSub;
+  // bool isInitialUriIsHandled = false;
+  // StreamSubscription? uriSub;
 
-  // 第一次打开
-  Future<void> handleInitialUri() async {
-    if (!isInitialUriIsHandled) {
-      isInitialUriIsHandled = true;
-      try {
-        final uri = await getInitialUri();
-        if (uri == null) {
-          print('no initial uri');
-        } else {
-          // 这里获取了 scheme 请求
-          print('got initial uri: $uri');
-        }
-      } on PlatformException {
-        print('falied to get initial uri');
-      } on FormatException catch (err) {
-        print('malformed initial uri, ' + err.toString());
-      }
-    }
+  // // 第一次打开
+  // Future<void> handleInitialUri() async {
+  //   if (!isInitialUriIsHandled) {
+  //     isInitialUriIsHandled = true;
+  //     try {
+  //       final uri = await getInitialUri();
+  //       if (uri == null) {
+  //         print('no initial uri');
+  //       } else {
+  //         // 这里获取了 scheme 请求
+  //         print('got initial uri: $uri');
+  //       }
+  //     } on PlatformException {
+  //       print('falied to get initial uri');
+  //     } on FormatException catch (err) {
+  //       print('malformed initial uri, ' + err.toString());
+  //     }
+  //   }
+  // }
+  //
+  // // 程序打开时介入
+  // void handleIncomingLinks() {
+  //   if (!kIsWeb) {
+  //     uriSub = uriLinkStream.listen((Uri? uri) {
+  //       // 这里获取了 scheme 请求
+  //       print('got uri: $uri');
+  //
+  //       // if (uri!.pathSegments[1].toLowerCase() == 'category') {
+  //       if (uri != null && uri.path == '/notify/category') {
+  //         Get.toNamed(AppRoutes.Category);
+  //       }
+  //     }, onError: (Object err) {
+  //       print('got err: $err');
+  //     });
+  //   }
+  // }
+
+  Future<void> initDeepLinks() async {
+    _appLinks = AppLinks();
+
+    // Handle links
+    _linkSubscription = _appLinks.uriLinkStream.listen((uri) {
+      debugPrint('onAppLink: $uri');
+      openAppLink(uri);
+    });
   }
 
-  // 程序打开时介入
-  void handleIncomingLinks() {
-    if (!kIsWeb) {
-      uriSub = uriLinkStream.listen((Uri? uri) {
-        // 这里获取了 scheme 请求
-        print('got uri: $uri');
-
-        // if (uri!.pathSegments[1].toLowerCase() == 'category') {
-        if (uri != null && uri.path == '/notify/category') {
-          Get.toNamed(AppRoutes.Category);
-        }
-      }, onError: (Object err) {
-        print('got err: $err');
-      });
+  void openAppLink(Uri uri) {
+    if (uri.path == '/notify/category') {
+      Get.toNamed(AppRoutes.Category);
     }
   }
 
@@ -91,7 +108,7 @@ class ApplicationController extends GetxController {
 
     // handleInitialUri();
     // handleIncomingLinks();
-
+    initDeepLinks();
     // 准备一些静态数据
     tabTitles = ['Welcome', 'Cagegory', 'Bookmarks', 'Account'];
     bottomTabs = <BottomNavigationBarItem>[
@@ -159,8 +176,8 @@ class ApplicationController extends GetxController {
 
   @override
   void dispose() {
-    uriSub?.cancel();
     pageController.dispose();
+    _linkSubscription?.cancel();
     super.dispose();
   }
 }

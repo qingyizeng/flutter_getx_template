@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../index.dart';
-import 'widgets.dart';
+import '../controller.dart';
+import 'news_item.dart';
 
 class NewsPageList extends StatefulWidget {
   NewsPageList({Key? key}) : super(key: key);

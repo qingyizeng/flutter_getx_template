@@ -5,9 +5,8 @@ import 'package:flutter_ducafecat_news_getx/common/routers/routes.dart';
 import 'package:flutter_ducafecat_news_getx/common/store/store.dart';
 import 'package:flutter_ducafecat_news_getx/common/utils/utils.dart';
 import 'package:flutter_ducafecat_news_getx/common/widgets/widgets.dart';
+import 'package:flutter_ducafecat_news_getx/pages/frame/sign_in/state.dart';
 import 'package:get/get.dart';
-
-import 'index.dart';
 
 class SignInController extends GetxController {
   final state = SignInState();
@@ -52,7 +51,7 @@ class SignInController extends GetxController {
       params: params,
     );
     UserStore.to.saveProfile(userProfile);
-
+    //UserStore.to.saveProfile(new UserLoginResponseEntity());
     Get.offAndToNamed(AppRoutes.Application);
   }
 

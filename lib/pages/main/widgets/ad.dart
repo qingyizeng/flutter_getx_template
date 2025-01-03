@@ -3,7 +3,7 @@ import 'package:flutter_ducafecat_news_getx/common/values/values.dart';
 import 'package:get/get.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../index.dart';
+import '../controller.dart';
 
 /// ad广告
 class AdWidget extends GetView<MainController> {

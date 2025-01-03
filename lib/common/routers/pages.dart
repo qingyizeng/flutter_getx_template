@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ducafecat_news_getx/common/middlewares/middlewares.dart';
-import 'package:flutter_ducafecat_news_getx/pages/application/index.dart';
-import 'package:flutter_ducafecat_news_getx/pages/category/index.dart';
-import 'package:flutter_ducafecat_news_getx/pages/frame/sign_in/index.dart';
-import 'package:flutter_ducafecat_news_getx/pages/frame/sign_up/index.dart';
-import 'package:flutter_ducafecat_news_getx/pages/frame/welcome/index.dart';
 import 'package:get/get.dart';
 
+import '../../pages/application/bindings.dart';
+import '../../pages/application/view.dart';
+import '../../pages/category/bindings.dart';
+import '../../pages/category/view.dart';
+import '../../pages/frame/sign_in/bindings.dart';
+import '../../pages/frame/sign_in/view.dart';
+import '../../pages/frame/sign_up/bindings.dart';
+import '../../pages/frame/sign_up/view.dart';
+import '../../pages/frame/welcome/bindings.dart';
+import '../../pages/frame/welcome/view.dart';
 import 'routes.dart';
 
 class AppPages {

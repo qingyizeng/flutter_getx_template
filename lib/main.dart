@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: Size(375, 812),
-      builder: () => RefreshConfiguration(
+      builder: (context, child) => RefreshConfiguration(
         headerBuilder: () => ClassicHeader(),
         footerBuilder: () => ClassicFooter(),
         hideFooterWhenNotFull: true,

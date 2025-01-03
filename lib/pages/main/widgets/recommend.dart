@@ -5,7 +5,7 @@ import 'package:flutter_ducafecat_news_getx/common/widgets/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
-import '../index.dart';
+import '../controller.dart';
 
 /// 推荐阅读
 class NewsRecommendWidget extends GetView<MainController> {

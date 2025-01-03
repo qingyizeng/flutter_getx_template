@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../index.dart';
+import '../controller.dart';
 
 /// hellowrod
 class HellowordWidget extends GetView<NotfoundController> {

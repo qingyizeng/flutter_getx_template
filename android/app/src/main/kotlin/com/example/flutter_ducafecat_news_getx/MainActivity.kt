@@ -1,4 +1,4 @@
-package com.example.flutter_ducafecat_news_getx
+package com.example.flutter_getx_template
 
 import io.flutter.embedding.android.FlutterActivity
 

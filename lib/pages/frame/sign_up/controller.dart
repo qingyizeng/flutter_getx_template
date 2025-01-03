@@ -3,9 +3,8 @@ import 'package:flutter_ducafecat_news_getx/common/apis/apis.dart';
 import 'package:flutter_ducafecat_news_getx/common/entities/entities.dart';
 import 'package:flutter_ducafecat_news_getx/common/utils/utils.dart';
 import 'package:flutter_ducafecat_news_getx/common/widgets/widgets.dart';
+import 'package:flutter_ducafecat_news_getx/pages/frame/sign_up/state.dart';
 import 'package:get/get.dart';
-
-import 'index.dart';
 
 class SignUpController extends GetxController {
   SignUpController();

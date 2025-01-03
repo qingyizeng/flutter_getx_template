@@ -1,6 +1,5 @@
+import 'package:flutter_ducafecat_news_getx/pages/frame/notfound/state.dart';
 import 'package:get/get.dart';
-
-import 'index.dart';
 
 class NotfoundController extends GetxController {
   NotfoundController();

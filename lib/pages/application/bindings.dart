@@ -1,7 +1,7 @@
-import 'package:flutter_ducafecat_news_getx/pages/category/index.dart';
-import 'package:flutter_ducafecat_news_getx/pages/main/index.dart';
 import 'package:get/get.dart';
 
+import '../category/controller.dart';
+import '../main/controller.dart';
 import 'controller.dart';
 
 class ApplicationBinding implements Bindings {
