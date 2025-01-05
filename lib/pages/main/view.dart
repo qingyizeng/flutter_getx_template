@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ducafecat_news_getx/pages/main/widgets/categories.dart';
-import 'package:flutter_ducafecat_news_getx/pages/main/widgets/channels.dart';
-import 'package:flutter_ducafecat_news_getx/pages/main/widgets/news_list.dart';
-import 'package:flutter_ducafecat_news_getx/pages/main/widgets/newsletter.dart';
-import 'package:flutter_ducafecat_news_getx/pages/main/widgets/recommend.dart';
+import 'package:flutter_getx_template/pages/main/widgets/categories.dart';
+import 'package:flutter_getx_template/pages/main/widgets/channels.dart';
+import 'package:flutter_getx_template/pages/main/widgets/news_list.dart';
+import 'package:flutter_getx_template/pages/main/widgets/newsletter.dart';
+import 'package:flutter_getx_template/pages/main/widgets/recommend.dart';
 import 'package:get/get.dart';
 
 import 'controller.dart';

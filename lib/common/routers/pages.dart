@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ducafecat_news_getx/common/middlewares/middlewares.dart';
+import 'package:flutter_getx_template/common/middlewares/middlewares.dart';
 import 'package:get/get.dart';
 
 import '../../pages/application/bindings.dart';

@@ -3,10 +3,10 @@ import 'dart:async';
 import 'package:app_links/app_links.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_ducafecat_news_getx/common/routers/routes.dart';
-import 'package:flutter_ducafecat_news_getx/common/utils/utils.dart';
-import 'package:flutter_ducafecat_news_getx/common/values/values.dart';
-import 'package:flutter_ducafecat_news_getx/pages/application/state.dart';
+import 'package:flutter_getx_template/common/routers/routes.dart';
+import 'package:flutter_getx_template/common/utils/utils.dart';
+import 'package:flutter_getx_template/common/values/values.dart';
+import 'package:flutter_getx_template/pages/application/state.dart';
 import 'package:get/get.dart';
 
 class ApplicationController extends GetxController {

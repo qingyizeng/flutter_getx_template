@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_ducafecat_news_getx/common/services/services.dart';
-import 'package:flutter_ducafecat_news_getx/common/store/store.dart';
-import 'package:flutter_ducafecat_news_getx/common/utils/utils.dart';
+import 'package:flutter_getx_template/common/services/services.dart';
+import 'package:flutter_getx_template/common/store/store.dart';
+import 'package:flutter_getx_template/common/utils/utils.dart';
 import 'package:get/get.dart';
 
 /// 全局静态数据

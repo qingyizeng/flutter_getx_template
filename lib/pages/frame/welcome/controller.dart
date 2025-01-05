@@ -1,6 +1,6 @@
-import 'package:flutter_ducafecat_news_getx/common/routers/routes.dart';
-import 'package:flutter_ducafecat_news_getx/common/store/store.dart';
-import 'package:flutter_ducafecat_news_getx/pages/frame/welcome/state.dart';
+import 'package:flutter_getx_template/common/routers/routes.dart';
+import 'package:flutter_getx_template/common/store/store.dart';
+import 'package:flutter_getx_template/pages/frame/welcome/state.dart';
 import 'package:get/get.dart';
 
 class WelcomeController extends GetxController {

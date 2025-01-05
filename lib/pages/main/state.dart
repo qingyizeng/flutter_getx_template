@@ -1,4 +1,4 @@
-import 'package:flutter_ducafecat_news_getx/common/entities/entities.dart';
+import 'package:flutter_getx_template/common/entities/entities.dart';
 import 'package:get/get.dart';
 
 class MainState {

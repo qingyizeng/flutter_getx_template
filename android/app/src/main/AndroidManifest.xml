@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.flutter_getx_template">
    <application
-        android:label="flutter_ducafecat_news_getx"
+        android:label="flutter_getx_template"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

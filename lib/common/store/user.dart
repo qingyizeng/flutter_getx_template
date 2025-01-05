@@ -1,9 +1,9 @@
 import 'dart:convert';
 
-import 'package:flutter_ducafecat_news_getx/common/apis/apis.dart';
-import 'package:flutter_ducafecat_news_getx/common/entities/entities.dart';
-import 'package:flutter_ducafecat_news_getx/common/services/services.dart';
-import 'package:flutter_ducafecat_news_getx/common/values/values.dart';
+import 'package:flutter_getx_template/common/apis/apis.dart';
+import 'package:flutter_getx_template/common/entities/entities.dart';
+import 'package:flutter_getx_template/common/services/services.dart';
+import 'package:flutter_getx_template/common/values/values.dart';
 import 'package:get/get.dart';
 
 class UserStore extends GetxController {

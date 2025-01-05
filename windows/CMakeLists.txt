@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
-project(flutter_ducafecat_news_getx LANGUAGES CXX)
+project(flutter_getx_template LANGUAGES CXX)
 
-set(BINARY_NAME "flutter_ducafecat_news_getx")
+set(BINARY_NAME "flutter_getx_template")
 
 cmake_policy(SET CMP0063 NEW)
 

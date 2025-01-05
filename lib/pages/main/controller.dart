@@ -1,6 +1,6 @@
-import 'package:flutter_ducafecat_news_getx/common/apis/apis.dart';
-import 'package:flutter_ducafecat_news_getx/common/entities/entities.dart';
-import 'package:flutter_ducafecat_news_getx/pages/main/state.dart';
+import 'package:flutter_getx_template/common/apis/apis.dart';
+import 'package:flutter_getx_template/common/entities/entities.dart';
+import 'package:flutter_getx_template/pages/main/state.dart';
 import 'package:get/get.dart';
 
 class MainController extends GetxController {

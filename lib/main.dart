@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ducafecat_news_getx/common/langs/translation_service.dart';
-import 'package:flutter_ducafecat_news_getx/common/routers/pages.dart';
-import 'package:flutter_ducafecat_news_getx/common/store/store.dart';
-import 'package:flutter_ducafecat_news_getx/common/style/style.dart';
-import 'package:flutter_ducafecat_news_getx/common/utils/utils.dart';
-import 'package:flutter_ducafecat_news_getx/global.dart';
+import 'package:flutter_getx_template/common/langs/translation_service.dart';
+import 'package:flutter_getx_template/common/routers/pages.dart';
+import 'package:flutter_getx_template/common/store/store.dart';
+import 'package:flutter_getx_template/common/style/style.dart';
+import 'package:flutter_getx_template/common/utils/utils.dart';
+import 'package:flutter_getx_template/global.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

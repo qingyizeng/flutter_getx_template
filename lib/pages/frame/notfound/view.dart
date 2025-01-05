@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ducafecat_news_getx/pages/frame/notfound/widgets/helloword.dart';
+import 'package:flutter_getx_template/pages/frame/notfound/widgets/helloword.dart';
 import 'package:get/get.dart';
 
 import 'controller.dart';
